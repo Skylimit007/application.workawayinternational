@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Submit an employment interest application. Review our privacy notice before sending.">
+  <title>Workways | Employment Interest Application</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Workways home"><span class="brand-mark">W</span><span>workways<span class="brand-dot">.</span></span></a>
+    <a class="top-link" href="#application">Employment application <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR NEXT CHAPTER STARTS HERE</p>
+        <h1>Take the next step<br>in your <em>career.</em></h1>
+        <p class="hero-intro">Tell us a little about yourself and the opportunities you’re looking for. Our team will review your details and follow up if there’s a suitable match.</p>
+        <div class="hero-note"><span class="note-icon">✓</span><span><strong>One application. A world of possibilities.</strong><br><small>Usually takes about 3–5 minutes</small></span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="art-circle circle-one"></div><div class="art-circle circle-two"></div><div class="art-card"><div class="art-card-top"><span>CAREER PATH</span><span class="art-spark">✳</span></div><div class="art-avatar">✦</div><div class="art-lines"><i></i><i></i><i></i></div><div class="art-pill">Your next opportunity</div></div><div class="art-float float-one">↗ Growth</div><div class="art-float float-two">✦ New beginnings</div></div>
+    </section>
+    <section class="form-section" id="application">
+      <div class="section-heading"><div><p class="eyebrow">LET’S GET TO KNOW YOU</p><h2>Employment application</h2><p class="muted">Fields marked with <span class="required">*</span> are required.</p></div><div class="step-badge"><span>01</span> / APPLICATION</div></div>
+      <form id="application-form" novalidate>
+        <div class="form-card">
+          <div class="form-card-heading"><span class="heading-icon">01</span><div><h3>Personal information</h3><p>How can we get in touch with you?</p></div></div>
+          <div class="fields two-col">
+            <label>Full name <span class="required">*</span><input name="fullName" autocomplete="name" maxlength="180" required placeholder="Enter your full name"></label>
+            <label>Email address <span class="required">*</span><input name="email" type="email" autocomplete="email" maxlength="254" required placeholder="you@example.com"></label>
+            <label>Phone number (include country code) <span class="required">*</span><input name="phone" type="tel" autocomplete="tel" maxlength="25" required placeholder="e.g. +254 712 345 678"><small>Include your country code, such as +254 for Kenya.</small></label>
+            <label>Nationality <span class="required">*</span><input name="nationality" maxlength="180" required placeholder="Your nationality"></label>
+            <label>Country of residence<input name="country" maxlength="180" autocomplete="country-name" placeholder="Country"></label>
+            <label>City / town<input name="city" maxlength="180" autocomplete="address-level2" placeholder="City or town"></label>
+          </div>
+        </div>
+        <div class="form-card">
+          <div class="form-card-heading"><span class="heading-icon">02</span><div><h3>Background &amp; preferences</h3><p>Help us understand your experience and goals.</p></div></div>
+          <div class="fields two-col">
+            <label>Highest education level<select name="education"><option value="">Select education level</option><option>Secondary school</option><option>Certificate</option><option>Diploma</option><option>Bachelor’s degree</option><option>Postgraduate degree</option><option>Other</option></select></label>
+            <label>Current occupation<input name="occupation" maxlength="180" placeholder="Your current role or occupation"></label>
+            <label>Job / role you’re interested in <span class="required">*</span><select name="jobInterest" required><option value="">Choose an area of interest</option><option>Hospitality &amp; catering</option><option>Care &amp; support work</option><option>Warehouse &amp; logistics</option><option>Construction &amp; trades</option><option>Driving &amp; transport</option><option>Cleaning &amp; facilities</option><option>Manufacturing</option><option>Agriculture</option><option>IT &amp; professional roles</option><option>Other / open to options</option></select></label>
+            <label>When could you start?<select name="availability"><option value="">Select availability</option><option>Immediately</option><option>Within 2–4 weeks</option><option>Within 1–3 months</option><option>More than 3 months</option><option>Flexible / not sure</option></select></label>
+            <label class="full-width">Relevant experience<textarea name="experience" rows="3" maxlength="180" placeholder="Briefly describe your relevant experience (optional)"></textarea></label>
+            <label class="full-width">Anything else you’d like us to know?<textarea name="message" rows="3" maxlength="800" placeholder="Add a short message (optional)"></textarea></label>
+          </div>
+        </div>
+        <div class="privacy-card"><span class="privacy-icon">♧</span><div><h3>Your information matters</h3><p>Your details will be sent to our designated recruitment contact through WhatsApp Business so they can review your application. This demo does not store submissions in a database. Do not submit passport numbers, national ID numbers, bank details, passwords, or document scans through this form. See the <a href="/privacy.html" target="_blank" rel="noopener">privacy notice</a>.</p></div></div>
+        <div class="consent-wrap"><label class="consent-label"><input type="checkbox" name="consent" required><span>I have read the privacy notice and consent to the information in this form being sent to the recruitment contact for the purpose of reviewing my employment enquiry. <span class="required">*</span></span></label></div>
+        <div class="honeypot" aria-hidden="true"><label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <div id="form-status" class="status" role="status" aria-live="polite"></div>
+        <button class="submit-button" type="submit"><span>Submit application</span><span aria-hidden="true">→</span></button>
+        <p class="form-footnote">Submitting this form does not guarantee employment or a job offer.</p>
+      </form>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="/"><span class="brand-mark">W</span><span>workways<span class="brand-dot">.</span></span></a><span>Employment interest application</span><a href="/privacy.html">Privacy notice</a></footer>
+</body>
+</html>
