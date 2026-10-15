@@ -9,7 +9,7 @@
  * review it and press Send inside WhatsApp; this website cannot send
  * a WhatsApp message silently.
  */
-const WHATSAPP_RECIPIENT = '2547XXXXXXXX';
+const WHATSAPP_RECIPIENT = '13474760470';
 
 const form = document.querySelector('#application-form');
 const statusBox = document.querySelector('#form-status');
